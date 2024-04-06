@@ -38,7 +38,7 @@ class Agent:
         
         action = torch.argmax(Q_output, dim=1)
     
-        return action
+        return int(action)
 
     def load_net(self):
         path = '111034521_hw2_data'
